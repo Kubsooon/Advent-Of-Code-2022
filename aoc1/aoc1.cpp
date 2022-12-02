@@ -36,5 +36,6 @@ int main()
 		list_of_int.erase(std::remove(list_of_int.begin(), list_of_int.end(), biggest_elem), list_of_int.end());
 	}
 	std::cout << "Part 1 answer is: " << part1_answer << " Part 2 answers is: " << part2_answer << std::endl;
+	std::cout << typeid(std::max_element(list_of_int.begin(), list_of_int.end())).name();
 	return 0;
 }
